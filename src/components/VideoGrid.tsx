@@ -1,4 +1,4 @@
-import React, { useCallback, useRef, useEffect } from 'react';
+import React, { useState, useCallback, useRef, useEffect } from 'react';
 import {
   View,
   FlatList,
@@ -27,7 +27,7 @@ const CARD_SPACING = 16;
 
 const VideoGrid: React.FC = () => {
   const flatListRef = useRef<FlatList>(null);
-  const [numColumns, setNumColumns] = React.useState(getNumColumns(screenWidth));
+  const [numColumns, setNumColumns] = useState(getNumColumns(screenWidth));
 
   const {
     data,

@@ -1,4 +1,5 @@
-import { StyleSheet, SafeAreaView } from "react-native";
+import React from "react";
+import { View, StyleSheet, SafeAreaView } from "react-native";
 import VideoGrid from "../components/VideoGrid";
 
 const Home = () => {
